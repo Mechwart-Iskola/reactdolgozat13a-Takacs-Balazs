@@ -1,4 +1,3 @@
-/* Alap stílusok */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,8 +12,7 @@ h1 {
   color: #444;
 }
 
-/* A teljes kártya középre igazítása */
-.product-card {
+.termekkartya {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
@@ -23,16 +21,11 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Keresési rész */
-.search-section {
+.kereses-szekcio {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
 }
 
 input {
@@ -43,32 +36,26 @@ input {
 }
 
 button {
-  padding: 10px 15px;
+  padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
-  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-/* Eredmények megjelenítése */
-.results-section {
-  margin-top: 20px;
-}
-
-.product-info {
+.termek-info {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.product-image {
+.termek-kep {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -76,37 +63,9 @@ button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.product-details p {
-  margin: 0;
-  font-size: 16px;
-  color: #555;
-}
-
-/* Hibaüzenet */
-.error {
+.hiba {
   color: #d9534f;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  margin-top: 10px;
-}
-
-/* Reszponzív dizájn */
-@media (max-width: 768px) {
-
-
-
-  .product-info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .product-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .product-details p {
-    font-size: 14px;
-  }
 }
